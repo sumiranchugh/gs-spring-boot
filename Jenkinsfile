@@ -21,6 +21,7 @@ pipeline {
 			options { timeout(time: 30, unit: 'MINUTES') }
 			steps {
 				sh 'test/run.sh'
+				sh 'echo $PATH'
 			}
 		}
 
